@@ -8,13 +8,18 @@ class Shapes:
         if Shapes.shapes == "cir":
             if len(args) == 1:
                 answer = 3.14 * (args[0] * args[0])
-        else:
-            if len(args) == 1:
-                answer = args[0] * args[0]
             else:
-                for i in args:
-                    answer *= i
-        return answer
+                if len(args) == 1:
+                    answer = args[0] * args[0]
+                else:
+                    for i in args:
+                        answer *= i
+                return answer
+        elif Shapes.shapes == "sqr":
+            if len(args) == 1:
+                return args[0] ** 2
+            else:
+                raise ValueError("Square requires exactly 1 side length.")
 
 
 obj = Shapes()
