@@ -20,7 +20,7 @@ def index(request):
             print(dob)
             patient = Patient.objects.get(gin=gin, dob=dob)
         except 	Patient.DoesNotExist:
-            messages.error(request, 'Please Check the Inputs !')
+            messages.error(request, 'Please Check the Inputs2 !')
         except Exception:
             messages.error(request, 'Invalid Patient GIN Number !')  
     else:
