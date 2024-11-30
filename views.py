@@ -84,7 +84,7 @@ def test_details(request, id, pid):
 def delete_record(request, id):
     record = MedicalRecord.objects.get(pk=id)
     record.delete()
-    return redirect('doctor_index2')
+    return redirect('doctor_index3')
 
 
 @login_required
