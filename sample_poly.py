@@ -16,7 +16,7 @@ class Shapes:
 
 obj = Shapes()
 '''
-if Shapes.shape == 'sqr':
+if Shapes.shape == 'square':
     side = int(input("side of square:"))
     print("area of square=" + str(Shapes.add(side)))
 if Shapes.shape == 'tri':
