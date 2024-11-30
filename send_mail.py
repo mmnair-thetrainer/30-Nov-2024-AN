@@ -2,7 +2,7 @@
 import smtplib, ssl
 
 smtp_host ="mail.mmnair.com"
-sender = 'reach@mmnair.com'
+sender = 'su2345@gmail.com'
 receiver = 'academy@infinitiwire.com'
 
 message = """From: M M Nair <reach@mmnair.com>
