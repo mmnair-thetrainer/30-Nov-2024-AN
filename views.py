@@ -22,7 +22,7 @@ def index(request):
         except 	Patient.DoesNotExist:
             messages.error(request, 'Please Check the Inputs2 !')
         except Exception:
-            messages.error(request, 'Invalid Patient GIN Number !')  
+            messages.error(request, 'Invalid Patient GIN Number2 !')  
     else:
         pass
     return render(request, 'doctor/index.html', {'patient': patient})
